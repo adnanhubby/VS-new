@@ -1,9 +1,10 @@
 pipeline {
     agent any
     stages {
-        stage ('lint') {
+        stage {
             steps {
                 sh "cat /etc/*erelease"
+                sh "echo helloworld"
             }
         }
     }
